@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> {% block title %} {% endblock %} </title>
+    <link rel="stylesheet" type="text/css" href={{url_for("static", filename="css/main.css")}}>
+</head>
+
+<body>
+<header>
+    <h1> <a href="{{url_for ("welcome_page") }}">My development</a> </h1>
+</header>
+
+<nav>
+    <ul class=nav>
+      <li> <a href="{{url_for ("about_page") }}">About</a> </li>
+      <li> <a href="{{url_for ("admin_page") }}">Articles</a> </li>
+      <li> <a href="{{url_for ("article_page") }}">Admin</a> </li>
+    </ul>
+</nav>
+
+<main class="main">
+     {% block main %} {% endblock %}
+</main>
+
+<footer>
+    <p>
+        (c) 2018 RS_backEnd
+    </p>
+</footer>
+</body>
+</html>

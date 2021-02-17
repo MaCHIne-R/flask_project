@@ -1,32 +1,15 @@
-<!doctype html>
-<html lang="en">
+{% extends '_main.jinja' %}
 
-<head>
-    <title> Welcome to Markdown blog </title>
-    <link rel="stylesheet" type="text/css" href={{url_for("static", filename="css/main.css")}}>
-</head>
+{% block title %} My first project {% endblock %}
 
-<body>
-<header>
-    <h1> My development </h1>
-</header>
+{% block main %}
 
-<nav>
-    <ul class=nav>
-      <li> <a href="#">About</a> </li>
-      <li> <a href="#">Articles</a> </li>
-      <li> <a href="#">Admin</a> </li>
-    </ul>
-</nav>
+Cupcake ipsum dolor sit amet.
+Jelly-o tart pudding ice cream donut.
+Chocolate bar caramels lemon drops.
+Bonbon tiramisu marzipan cupcake dessert chocolate cake fruitcake I love chupa chups.
+Sugar plum jujubes sugar plum marshmallow I love gummies sesame snaps icing I love.
+Bonbon gingerbread apple pie halvah I love. Chupa chups jelly-o wafer sesame snaps
+I love caramels cake.
 
-<main>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</main>
-
-<footer>
-    <p>
-        (c) 2018 RS_backEnd
-    </p>
-</footer>
-</body>
-</html>
+ {% endblock %}

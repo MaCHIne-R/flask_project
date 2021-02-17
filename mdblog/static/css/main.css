@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    text-align: center;
+    text-align: right;
 }
 
 .nav {
@@ -25,4 +25,8 @@ header {
 
 footer {
     text-align: center;
+}
+
+.main{
+  text-align: center;
 }
